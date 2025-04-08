@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project - ToDesktop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap');
+    </style>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="./assets/todesktop-logo.bn2Qe8sb.png" type="image/x-icon">
+</head>
+
+<body class="min-h-screen min-w-screen">
+
+    <!-- Nav-Bar  -->
+
+    <!-- Use `w-full` to make an element span the full width of its parent. Use `top-0 left-0 right-0` with `absolute` or `fixed` for positioned, full-width overlays or headers. -->
+
+    <nav class="fixed font-semibold text-lg items-center p-2 flex justify-between top-0 right-0 left-0 bg-white shadow-md">
+
+        <!-- first container  -->
+        <a href="#" id="brand-icon" class="flex items-center" >
+            <img src="assets/todesktop-logo.bn2Qe8sb.png" alt="icon">
+            <span>ToDesktop</span>
+        </a>
+
+        <!-- second container  -->
+        <div class="hidden lg:flex gap-12 text-gray-800 ">
+            <a href="#" class="hover:text-blue-800">Pricing</a>
+            <a href="#" class="hover:text-blue-800">Docs</a>
+            <a href="#" class="hover:text-blue-800">ChangeLog</a>
+            <a href="#" class="hover:text-blue-800">Blogs</a>
+            <a href="#" class="hover:text-blue-800">Login</a>
+        </div>
+
+        <!-- third container -->
+        <!-- <div class="flex sm:hidden p-3 items-center flex-col">
+            &#9776;
+        </div> -->
+        <a href="#" class="hidden md:flex">
+            <button class="border shadow cursor-pointer border-gray-400 rounded-[8px] flex items-center p-2">
+                <img src="assets/electron-icon.E8mrXtZM.svg" class="mr-2" alt="">
+                <span>Electron Developers</span>
+                <!-- icon -->
+                <span class="ml-2 text-gray-600" aria-hidden="true"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="  "><path d="M0.8125 6H13.1875M13.1875 6L8.125 0.9375M13.1875 6L8.125 11.0625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+            </button>
+        </a>
+    </nav>
+</body>
+
+</html>
