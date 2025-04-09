@@ -17,37 +17,132 @@
     <!-- Nav-Bar  -->
 
     <!-- Use `w-full` to make an element span the full width of its parent. Use `top-0 left-0 right-0` with `absolute` or `fixed` for positioned, full-width overlays or headers. -->
+    <header>
+        <nav
+            class="relative font-semibold text-lg items-center p-2 flex justify-between top-0 right-0 left-0 bg-white shadow-md">
 
-    <nav class="fixed font-semibold text-lg items-center p-2 flex justify-between top-0 right-0 left-0 bg-white shadow-md">
+            <!-- first container  -->
+            <a href="#" id="brand-icon" class="ml-2.5 flex items-center cursor-pointer">
+                <img src="assets/todesktop-logo.bn2Qe8sb.png" alt="icon">
+                <span class="ml-2">ToDesktop</span>
+            </a>
 
-        <!-- first container  -->
-        <a href="#" id="brand-icon" class="flex items-center" >
-            <img src="assets/todesktop-logo.bn2Qe8sb.png" alt="icon">
-            <span>ToDesktop</span>
-        </a>
+            <!-- second container  -->
+            <div class="hidden lg:flex gap-10 text-gray-800 ">
+                <a href="#" class="hover:text-blue-800">Pricing</a>
+                <a href="#" class="hover:text-blue-800">Docs</a>
+                <a href="#" class="hover:text-blue-800">ChangeLog</a>
+                <a href="#" class="hover:text-blue-800">Blogs</a>
+                <a href="#" class="hover:text-blue-800">Login</a>
+            </div>
 
-        <!-- second container  -->
-        <div class="hidden lg:flex gap-12 text-gray-800 ">
-            <a href="#" class="hover:text-blue-800">Pricing</a>
-            <a href="#" class="hover:text-blue-800">Docs</a>
-            <a href="#" class="hover:text-blue-800">ChangeLog</a>
-            <a href="#" class="hover:text-blue-800">Blogs</a>
-            <a href="#" class="hover:text-blue-800">Login</a>
-        </div>
+            <!-- third container -->
 
-        <!-- third container -->
-        <!-- <div class="flex sm:hidden p-3 items-center flex-col">
+            <!-- <div class="flex sm:hidden p-3 items-center flex-col">
             &#9776;
         </div> -->
-        <a href="#" class="hidden md:flex">
-            <button class="border shadow cursor-pointer border-gray-400 rounded-[8px] flex items-center p-2">
-                <img src="assets/electron-icon.E8mrXtZM.svg" class="mr-2" alt="">
-                <span>Electron Developers</span>
-                <!-- icon -->
-                <span class="ml-2 text-gray-600" aria-hidden="true"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="  "><path d="M0.8125 6H13.1875M13.1875 6L8.125 0.9375M13.1875 6L8.125 11.0625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
-            </button>
-        </a>
-    </nav>
+            <a href="#" class="mr-2.5 hidden md:flex">
+                <button class="border shadow cursor-pointer border-gray-400 rounded-[8px] flex items-center p-2">
+                    <img src="assets/electron-icon.E8mrXtZM.svg" class="mr-2" alt="">
+                    <span>Electron Developers</span>
+                    <!-- icon -->
+                    <span class="ml-2 text-gray-600" aria-hidden="true"><svg width="14" height="12" viewBox="0 0 14 12"
+                            fill="none" xmlns="http://www.w3.org/2000/svg" class="  ">
+                            <path d="M0.8125 6H13.1875M13.1875 6L8.125 0.9375M13.1875 6L8.125 11.0625"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main  -->
+    <div class="relative ml-9 md:flex md:justify-center">
+        <!-- version  -->
+        <div
+            class="mt-13 mb-8 w-[150px] gap-2 items-center border-amber-300 border flex justify-center bg-amber-100 rounded-[8px] shadow-md ">
+            <div class="w-[12px] h-[12px] bg-yellow-400 rounded-full">
+            </div>
+            <div class="font-semibold text-amber-900">
+                v0.26.0
+            </div>
+            <div class="text-3xl mb-1 text-yellow-600 font-semibold">
+                &rarr;
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar 2 -->
+    <section class=" sm:flex flex-col w-1/2 mx-auto hidden">
+
+        <!-- version -->
+
+        <!-- navbar 2 -->
+        <div class="text-slate-600 justify-center flex gap-4 sm:left-0 ">
+            <section class="flex items-center gap-1">
+                <!-- icon  -->
+                <div>
+                    <img src="assets/code.svg" alt="">
+                </div>
+                <div>
+                    Code Optional
+                </div>
+            </section>
+
+
+            <section class="flex gap-1 items-center ">
+                <!-- icon  -->
+                <div>
+                    <img src="assets/hold.svg" alt="">
+                </div>
+                <div>
+                    Drag & drop builder
+                </div>
+            </section>
+
+
+            <section class="flex items-center  gap-1">
+                <!-- icon  -->
+                <div>
+                    <img src="assets/window.svg" alt="">
+                </div>
+                <div>
+                    Windows, Mac, Linux
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Text heading, description  and buttons -->
+    <section class="md:w-1/2 md:mx-auto">
+        <!-- heading -->
+        <div class="mt-8 ml-3 font-semibold md:font-bold text-5xl md:text-6xl md:text-center">
+            Web app to desktop app in minutes
+        </div>
+
+
+        <!-- description  -->
+        <div class="h-full ml-3 md:text-center mt-5 md:text-2xl  text-slate-600">
+            Take your web app codebase and transform it into a cross platform desktop app with native functionality.
+        </div>
+
+        <div class="flex flex-col gap-4 mt-16 w-4/5 mx-auto md:flex-row md:w-1/2">
+            <div class="font-bold border rounded-[10px]  text-center p-3 bg-blue-700 text-slate-50 flex-1">
+                Download now
+            </div>
+            <div class="font-bold border border-gray-300 shadow-md rounded-[10px] flex-1 text-center p-3 ">
+                Read docs
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+
 </body>
 
 </html>
