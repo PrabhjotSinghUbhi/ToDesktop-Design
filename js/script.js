@@ -1,23 +1,10 @@
-const hamButton = document.getElementById("hambtn");
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function toggleBar(divToAdd) {
-    const div1 = document.createElement("div")
-    div1.innerHTML = "Pricing"
+let line1 = document.getElementById("lineOne")
 
-    const div2 = document.createElement("div")
-    div2.innerHTML = "Docs"
+//Registering the plugin.
+gsap.registerPlugin(ScrollTrigger);
 
-    const div3 = document.createElement("div")
-    div3.innerHTML = "Changelog"
+//gsap animation.
 
-    const div4 = document.createElement("div")
-    div4.innerHTML = "Blog"
-
-    const div5 = document.createElement("div")
-    div5.innerHTML = "Login"
-
-    const Elements = ["Pricing", "Docs", "Changelog", "Blog", "Login"]
-
-    
-
-}

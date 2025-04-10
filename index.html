@@ -14,6 +14,14 @@
     </style>
     <link rel="stylesheet" href="src/output.css">
     <link rel="shortcut icon" href="./assets/todesktop-logo.bn2Qe8sb.png" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+
+
+    <script defer src="js/script.js"></script>
 </head>
 
 <body x-data="{open : false}"
@@ -59,10 +67,10 @@
             </a>
 
             <!-- Mobile menu using Alpine JS framework -->
-            <section x-show="open " class="z-20 fixed inset-0 bg-white">
+            <nav x-show="open " class="z-20 fixed inset-0 bg-white" aria-label="Mobile menu">
 
-                <div
-                    class="top-0 right-0 left-0 relative flex justify-between items-center bg-white shadow-md p-2 font-semibold text-lg">
+                <div class=" top-0 right-0 left-0 relative flex justify-between items-center bg-white shadow-md p-2
+                font-semibold text-lg">
 
                     <a href="#" id="brand-icon" class="flex items-center ml-2.5 cursor-pointer">
                         <img src="assets/todesktop-logo.bn2Qe8sb.png" alt="icon">
@@ -76,8 +84,8 @@
                             &times;
                         </button>
                     </div>
-
                 </div>
+
 
                 <div class="flex flex-col gap-4 mt-2.5 ml-5 font-medium">
                     <a href="" class="inline hover:bg-amber-100 p-2 rounded-[8px] w-4/5 font-bold">Pricing</a>
@@ -96,14 +104,16 @@
                         </button>
                     </a>
                 </div>
-            </section>
+            </nav>
         </nav>
     </header>
 
     <!-- Main  -->
-    <main>
+    <main class="">
 
         <section id="hero-container">
+
+            <!-- version  -->
             <div class="relative md:flex md:justify-center ml-9">
                 <!-- version  -->
                 <div
@@ -118,10 +128,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- Navbar 2 -->
             <section class="hidden sm:flex flex-col mx-auto w-1/2">
-
-                <!-- version -->
 
                 <!-- navbar 2 -->
                 <div class="sm:left-0 flex justify-center gap-4 text-slate-600">
@@ -186,16 +195,12 @@
                 </div>
             </section>
 
-            <section>
-
-            </section>
         </section>
 
         <section id="companies-container" class="my-16">
 
-            
             <!-- APPS POWERED BY TODESKTOP -->
-            <section class="flex justify-center gap-2">
+            <section class="flex justify-center gap-2 mb-6">
 
                 <div>
                     <img class="translate-y-2" src="assets/downArrow.svg" alt="">
@@ -209,17 +214,587 @@
                 </div>
             </section>
 
-            <!-- lines -->
+            <!-- lines group -->
             <section>
 
-                <!-- line 1 -->
-                <div class="w-12 h-12">
-                    <img src="./assets/asset 2.png" alt="">
-                </div>
+                <section id="lineOne" class="flex gap-2.5 mb-3 -translate-x-[1000px]">
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <section id="lineTwo" class="flex gap-2.5 mb-3 -translate-x-[1460px]">
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+                <section id="lineThree" class="flex gap-2.5 mb-3 -translate-x-[1000px] md:hidden">
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+                    <div
+                        class="flex ml-2.5 px-3 shadow-md border-gray-400 rounded-lg flex-col justify-center items-center p-2 border w-fit rou round">
+                        <!-- line one -->
+                        <div class="">
+                            <img src="./assets/asset 2.png" class="w-12 md:w-16 h-12 md:h-16" alt="">
+                        </div>
+                        <div class="text-sm font-semibold">
+                            Macface
+                        </div>
+                    </div>
+
+
+
+                </section>
+
             </section>
+
+            <button id="hehe" class="border p-3 m-38 rounded-full bg-amber-400">hello world</button>
+
         </section>
         <div class="h-[1000px]"></div>
     </main>
+
+    <script>
+        gsap.to("#lineOne", {
+            scrollTrigger: {
+                trigger: "#lineOne",
+                scrub: true,
+                // start: "top bottom 50px",
+                // end: "bottom top",
+                // toggleActions: "reverse reverse none none",
+                markers: true
+            },
+            x: 0
+        })
+        gsap.to("#lineThree", {
+            scrollTrigger: {
+                trigger: "#lineThree",
+                scrub: 1,
+                // toggleActions: "reverse reverse none none",
+                markers: true
+            },
+            x: 0
+        })
+        gsap.to("#lineTwo", {
+            scrollTrigger: {
+                trigger: "#lineTwo",
+                scrub: 1,
+                // start: "top bottom 50px",
+                // end: "bottom top",
+                toggleActions: "reverse reverse reverse reverse",
+                markers: true
+            },
+            x: 0
+        })
+    </script>
+
 </body>
+
+</html>
 
 </html>
